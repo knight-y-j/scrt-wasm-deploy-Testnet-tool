@@ -54,9 +54,10 @@ yarn start
 ```
 
 if you need create a mnemonic and accAddress
--> Create 'Click'
--> Go back to Step.3 : set .env file (SECRET_MNEMONIC and SECRET_TESTNET_ACCADDRESS)
--> yarn start
+
+- Create 'Click'
+- Go back to Step.3 : set .env file (SECRET_MNEMONIC and SECRET_TESTNET_ACCADDRESS)
+- yarn start
 
 6. upload wasm file
 
