@@ -2,6 +2,13 @@
 
 Upload wasm file to the TESTNET app.
 
+app function
+
+- deploy wasm file -> 'select wasm file'
+- create a mnemonic and accAddress -> 'click'
+
+---
+
 # Environment
 
 - typescript
