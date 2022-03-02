@@ -61,4 +61,5 @@ if you need create a mnemonic and accAddress
 
 6. upload wasm file
 
-click 'select wasm file' -> choose contract.wasm -> display contract address after few second.
+- click 'select wasm file'
+- choose contract.wasm -> display contract address after few second.
