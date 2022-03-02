@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dava</title>
+  <script type="module" src="dist/bundle.js"></script>
+  <link rel="stylesheet" href="./assets/globals.css">
+</head>
+<body>
+  <section class="header-container">
+    <header>
+      <h1>SCRT</h1>
+    </header>
+  </section>
+  <hr>
+  <section class="body-container">
+    <body>
+      <section>
+        <div>
+          <h3>Deploy Contract to The TESTNET</h3>
+        </div>
+        <div>
+          <label>Contract Address
+            <p id="contract_address"></p>
+          </label>
+        </div>
+        <hr>
+        <div class="upload-file-container">
+          <form>
+            <label for="wasm_file" class="upload-file-container-label">select wasm file
+              <input type="file" id="wasm_file">
+            </label>
+          </form>
+        </div>
+      </section>
+    </body>
+  </section>
+  <hr>
+  <section class="footer-container">
+    <footer>secret network</footer>
+  </section>
+</body>
+</html>

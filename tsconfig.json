@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "lib": ["DOM", "ES2020", "DOM.Iterable", "ScriptHost"],
+    "strict": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "target": "ES2015",
+      "module": "CommonJS"
+    }
+  }
+}
+
