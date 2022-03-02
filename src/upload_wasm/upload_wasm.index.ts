@@ -89,6 +89,7 @@ export class UploadWasm {
   public async init(): Promise<void> {
     try {
       await this.cosmWasmSigningClient.init();
+
       
       this.reader.addEventListener("load", event => {
         this.signingClient = this.cosmWasmSigningClient.getSigningClient();
