@@ -12,14 +12,12 @@ import {
 import { INITMSGTYPE } from '../utils/types/utils.types.index'
 
 /***
- * 
  * Upload Wasm File before set label and initMsg.
- * 1. Unique label
+ * 1. Unique memo
  * 2. initMsg
- * 
  * */ 
 
-const deployLabel: string = 'My scrt app'; // unique label name for deploy contract
+const deployMemo: string = 'My scrt app'; // unique label name for deploy contract
 
 const initMsg: INITMSGTYPE = {
   name: 'sample-snip721',     // name of token contract
@@ -46,7 +44,7 @@ export class UploadWasm {
     this.reader = new FileReader();
     this.cosmWasmSigningClient = new CosmWasmSigningClient();
     this.signingClient = undefined;
-    this.label = UploadWasm.generateContractLabel(deployLabel);
+    this.label = UploadWasm.generateContractLabel(deployMemo);
     this.initMsg = initMsg;
     this.contractAddress = '';
   }

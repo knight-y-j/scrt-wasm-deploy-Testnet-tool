@@ -20,10 +20,8 @@ import * as dotEnv from 'dotenv'
 dotEnv.config()
 
 /***
- * 
  * Upload Wasm File before set Custom fee.
  * 1. Custom fee
- * 
  * */ 
 
 // Set Custom Fee

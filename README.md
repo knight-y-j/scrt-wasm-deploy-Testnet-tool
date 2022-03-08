@@ -7,6 +7,29 @@ app function
 - deploy wasm file -> 'select wasm file'
 - create a mnemonic and accAddress -> 'click'
 
+tree
+
+```
+src
+│   ├── cosmwasm_client
+│   │   └── cosmwasm_client.index.ts
+│   ├── index.ts
+│   ├── signing_cosmwasm_client
+│   │   └── signing_cosmwasm_client.index.ts
+│   ├── upload_wasm
+│   │   ├── contract.wasm
+│   │   └── upload_wasm.index.ts
+│   └── utils
+│       ├── scrt_client_tools.index.ts // client method
+│       ├── scrt_tools.index.ts        // tools
+│       └── types
+│           └── utils.types.index.ts
+├── tsconfig.json
+├── webpack.config.prod.ts
+├── webpack.config.ts
+└── yarn.lock
+```
+
 ---
 
 # Environment
@@ -50,23 +73,30 @@ SECRET_MNEMONIC=<MNEMONIC>                             // mnemonic
 SECRET_TESTNET_ACCADDRESS=<accAddress>                 // accAddress
 ```
 
-4. faucet
+4. Upload Wasm File before set custom fee memo and initMsg
+
+src/signing_cosmwasm_client/signing_cosmwasm_client.index.ts -> custom fee
+src/utils/upload_wasm.index.ts -> memo and initMsg
+
+5. faucet
 
 Faucet: https://faucet.secrettestnet.io/ // Use this faucet to get tokens for the pulsar-2 testnet.
 
-5. yarn start
+6. yarn start
 
 ```
 yarn start
 ```
 
+-> access http://localhost:8080
+
 if you need create a mnemonic and accAddress
 
 - Create 'Click'
 - Go back to Step.3 : set .env file (SECRET_MNEMONIC and SECRET_TESTNET_ACCADDRESS)
-- yarn start
+- yarn start -> access http://localhost:8080
 
-6. upload wasm file
+7. upload wasm file
 
 - click 'select wasm file'
 - choose contract.wasm -> display contract address after few second.

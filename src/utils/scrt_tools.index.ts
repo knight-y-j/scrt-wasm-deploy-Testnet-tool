@@ -14,7 +14,6 @@ dotEnv.config();
  * ########################
  *  Scrt method(tools)
  * ########################
- * 
  * 1. Secret key
  * 2. Rest RPC URL (TESTNET)
  * 3. Mnemonic
@@ -22,7 +21,6 @@ dotEnv.config();
  * 5. Public Key
  * 6. accAddress (Wallet address)
  * 7. EnigmaUtils
- * 
  * */ 
 
 // helper method for read .env file 

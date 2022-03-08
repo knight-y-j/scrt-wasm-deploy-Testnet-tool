@@ -18,7 +18,6 @@ import { CHAINIDTYPE, HEIGHTTYPE, ACCOUNTTYPE, INITMSGTYPE } from './types/utils
  * ################################
  *  CosmWasm Client tools(Method)
  * ################################
- * 
  * 1. Chain ID
  * 2. Height
  * 3. Account Address(wallet address)
@@ -26,7 +25,6 @@ import { CHAINIDTYPE, HEIGHTTYPE, ACCOUNTTYPE, INITMSGTYPE } from './types/utils
  * 5. Node info
  * 6. Block
  * 7. Latest Block
- * 
  * */ 
 
 // Create CosmWasm Client
@@ -99,10 +97,8 @@ export const fetchBlockLatest = async (): Promise<BlockResponse> => {
  * #######################################
  *  Singing CosmWasm Client tools(Method)
  * #######################################
- * 
  * 1. uploadRecipient(Deploy Contract)
  * 2. instantiate (Instantiate Contract)
- * 
  * */ 
 
 // Upload wasm file to the TESTNET

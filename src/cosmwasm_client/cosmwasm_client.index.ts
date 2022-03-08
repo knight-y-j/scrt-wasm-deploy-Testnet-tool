@@ -12,18 +12,19 @@ import {
 } from '../utils/scrt_tools.index'
 
 export class CosmWasmClient {
-    mnemonic: string;
-    signingPen: Secp256k1Pen | undefined;
-    pubkey: PubKey | undefined;
-    accAddress: string;
+    private mnemonic: string;
+    private signingPen: Secp256k1Pen | undefined;
+    private pubkey: PubKey | undefined;
+    private accAddress: string;
 
     constructor() {
-        this.mnemonic = mnemonic;     // generate mnemonic
+        this.mnemonic = mnemonic;     // create new mnemonic
         this.signingPen = undefined;
         this.pubkey = undefined;
         this.accAddress = '';
     }
 
+    // initial
     public async init(): Promise<void> {
         try {
             this.signingPen = await generateSigningPen(mnemonic);
@@ -34,10 +35,12 @@ export class CosmWasmClient {
         }
     }
 
+    // Get mnemonic
     public getMnemonic(): string {
         return this.mnemonic
     }
 
+    // Get accAddress(wallet address)
     public getAccAddress(): string {
         return this.accAddress
     }
