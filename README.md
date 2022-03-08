@@ -75,8 +75,8 @@ SECRET_TESTNET_ACCADDRESS=<accAddress>                 // accAddress
 
 4. Upload Wasm File before set custom fee memo and initMsg
 
-src/signing_cosmwasm_client/signing_cosmwasm_client.index.ts -> custom fee
-src/utils/upload_wasm.index.ts -> memo and initMsg
+- src/signing_cosmwasm_client/signing_cosmwasm_client.index.ts -> custom fee
+- src/utils/upload_wasm.index.ts -> memo and initMsg
 
 5. faucet
 
